@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Home | JCI Ottawa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   
 </head>
 <body>
@@ -11,25 +12,54 @@
   <?php include('includes/header.php'); ?>
 
   <main>
-    <section>
-      <div class="carousel" data-carousel>
-        <button class="carousel-btn prev" data-carousel-btn="prev">prev</button>
-        <button class="carousel-btn next" data-carousel-btn="next">next</button>
-        <ul class="images" data-images>
+    <section class="banner">
+      <div class="container">
+
+        <div class="carousel" data-carousel>
+
+          <button class="carousel-btn prev" data-carousel-btn="prev"><i class="material-icons">keyboard_arrow_left</i></button>
+          <button class="carousel-btn next" data-carousel-btn="next"><i class="material-icons">keyboard_arrow_right</i></button>
+          <ul class="images" data-images>
+
             <li class="img active" data-active><img src="./images/JCi.png" alt="JCI image"></li>
             <li class="img"><img src="./images/fb.jpg" alt="JCI image"></li>
             <li class="img"><img src="./images/group.png" alt="JCI image"></li>
             <li class="img"><img src="./images/parliament.jpg" alt="JCI image"></li>
             <li class="img"><img src="./images/JCI Logo.jpg" alt="JCI image"></li>
-        </ul>
-        <ul class="progress-bar">
-          <li class="selected"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          </ul>
+          <ul class="progress-bar">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
 
-        </ul>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+
+      <div class="container">
+        <div class="intro">
+
+
+          <div class="intro-card">
+            <div class="text-content">
+
+              <h2>Who We Are</h2>
+              <p>JCI Ottawa is a group of young professionals and entrepreneurs committed to creating positive change in our community. Affiliated with JCI Canada and Junior Chamber International we have more than 200,000 members in over 100 countries.
+Through networking, training and personal development opportunities, we inspire our members to build leadership skills and take action. JCI Ottawa members range in age from 19-40.</p>
+              <p>Members plan and carry out projects and programs focusing on four key areas:
+             Business Development
+             Community Development
+             International Development
+             Individual Development
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
     <h1>Welcome to JCI Ottawa</h1>
