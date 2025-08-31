@@ -1,6 +1,14 @@
 <?php include 'includes/header.php'; ?>
 
+
+<main>
+    
 <section class="hero">
+
+<div class="about-content">
+      <h1><span>EMPOWERING</span><br>OTTAWA’S YOUNG<br>LEADERS TO BE BETTER</h1>
+</div>
+
   <div class="hero-wrapper">
     <div class="hero-images">
       <div class="hero-img-left">
@@ -11,13 +19,22 @@
       </div>
     </div>
 
-    <div class="hero-text">
+  <div class="hero-text">
+  <div class="our-story-container">
+    <div class="story-left">
       <a href="#" class="our-story-link">Our Story ➜</a>
+    </div>
+    <div class="story-right">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat, nisl vel malesuada dignissim, urna lorem commodo felis, in lobortis purus nulla ac nulla. <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat, nisl vel malesuada dignissim, urna lorem commodo felis, in lobortis purus nulla ac nulla.
+      </p>
+      <p>
         Aenean commodo leo sit amet congue convallis. Sed eu sapien sit amet libero rutrum viverra. Morbi tincidunt lacus vitae lectus bibendum, et dictum velit dapibus. Donec vehicula magna in justo volutpat, nec fermentum ligula lacinia.
       </p>
     </div>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -77,5 +94,7 @@
     <button type="submit">Subscribe</button>
   </form>
 </section>
+
+</main>
 
 <?php include 'includes/footer.php'; ?>
