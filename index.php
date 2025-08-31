@@ -62,8 +62,28 @@ Through networking, training and personal development opportunities, we inspire 
 
       </div>
     </section>
-    <h1>Welcome to JCI Ottawa</h1>
-    <p>This is the homepage content.</p>
+    <section class="cta-blue">
+      <!-- <div class="container"> -->
+        <div class="cta-left">
+          <h4>Have a question?</h4>
+          <p>Our team is happy to assist you</p>
+          <a href="contact.php" class="btn-white">Contact Us</a>
+        </div>
+        <div class="cta-right">
+          <img src="images/JCi.png" alt="Support team">
+        </div>
+      <!-- </div>   -->
+    </section>
+    <section class="newsletter">
+      <div class="newsletter-title">
+        <h3>Get on our <br> Newsletter</h3>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter e-mail address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
   </main>
 
   <?php include('includes/footer.php'); ?>

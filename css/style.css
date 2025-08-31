@@ -387,38 +387,54 @@ section {
 }
 
 .newsletter {
-  background: #102b5b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background: #102b5b; */
   color: white;
-  padding: 3rem 2rem;
+  padding: 8rem 2rem;
   text-align: center;
+  background-image: url("../images/groupphoto.png");
+  background-color: rgba(89, 89, 90, 0.9);
+  background-blend-mode: multiply; 
+  background-size: cover;
+  background-position: center;
 }
 
+
 .newsletter h3 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  
 }
 
 .newsletter-form {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  /* gap: 1rem; */
   flex-wrap: wrap;
 }
 
 .newsletter-form input {
-  padding: 0.75rem;
+  padding: 0.85rem;
   border: none;
-  border-radius: 4px;
-  width: 250px;
+  border-radius: 0px;
+  width: 240px;
+  height: 3.5rem;
+  font-size: 1rem;
 }
 
 .newsletter-form button {
   background: #fbc02d;
   border: none;
-  padding: 0.75rem 1rem;
-  border-radius: 4px;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0px;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1rem;
+ 
 }
 
 /* Responsive */
@@ -814,27 +830,29 @@ section {
   margin-bottom: 1rem;
 }
 
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+/* .newsletter-form {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  /* gap: 1rem; */ 
+
 
 .newsletter-form input {
   padding: 0.75rem;
-  width: 250px;
+  /* width: 250px; */
   border: none;
-  border-radius: 4px;
+  border-radius: 0px;
+
 }
 
 .newsletter-form button {
-  padding: 0.75rem 1rem;
+  /* padding: 0.75rem 1rem; */
   background-color: #fbc02d;
   border: none;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
+
 }
 
 
@@ -970,6 +988,13 @@ section {
   background: white;
 }
 
+
+.newsletter-title > h3 {
+  font-size: 2.5rem;
+}
+
+
+
 /* Responsive */
 @media (max-width: 600px) {
   .info-grid {
@@ -977,7 +1002,7 @@ section {
     align-items: center;
   }
 
-  .newsletter-form {
+  .newsletter {
     flex-direction: column;
   }
 
@@ -985,4 +1010,22 @@ section {
     width: 30rem;
     font-size: .9rem;
   }
+
+  .newsletter-form input {
+  /* padding: 0.75rem; */
+  /* width: 250px; */
+  border: none;
+  border-radius: 0px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  /* padding: 0.75rem 1rem; */
+  background-color: #fbc02d;
+  border: none;
+  font-weight: bold;
+  border-radius: 0px;
+  cursor: pointer;
+
+}
 }
