@@ -8,7 +8,7 @@
   </div>
 
   <div class="contact-container">
-    <form class="contact-form" action="send-message.php" method="POST">
+    <form class="contact-form" action="https://formsubmit.co/executive@jciottawa.ca" method="POST">
       <h3>Get In Touch</h3>
       <input type="text" name="name" placeholder="Name" required>
       <input type="email" name="email" placeholder="Email" required>
@@ -23,15 +23,11 @@
     <div class="info-grid">
       <div class="info-box">
         <h4>Office</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="info-box">
-        <h4>Phone</h4>
-        <p>+1 (555) 000-0000</p>
+        <p>JCI Ottawa, Ottawa, Ontario.</p>
       </div>
       <div class="info-box">
         <h4>Email</h4>
-        <p>hi@unitedu.com</p>
+        <p>ottawa.jci@gmail.com</p>
       </div>
     </div>
   </div>

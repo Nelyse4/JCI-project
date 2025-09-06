@@ -26,10 +26,21 @@
     </div>
     <div class="story-right">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat, nisl vel malesuada dignissim, urna lorem commodo felis, in lobortis purus nulla ac nulla.
-      </p>
+        We are a delighted JCI Local Organization proudly connected with JCI Canada. We focus on a range of social and community 
+        development projects designed to foster participation and contribute to change within communities.  
+        We focus on developing leadership skills and creating opportunities for growth.  
+        JCI Ottawa is defined by its core values of Leadership, Responsibility, Cooperation, and Progress. 
+        The organization truly cares about helping people grow as leaders within their communities and beyond. 
+        We also joyfully offer youth leadership development programs to inspire young individuals to take initiative and create 
+        a positive impact in their community.
+
       <p>
-        Aenean commodo leo sit amet congue convallis. Sed eu sapien sit amet libero rutrum viverra. Morbi tincidunt lacus vitae lectus bibendum, et dictum velit dapibus. Donec vehicula magna in justo volutpat, nec fermentum ligula lacinia.
+       Building on this foundation, JCI Ottawa stands as a vibrant part of this global movement, actively fostering connections 
+       among driven young leaders and offering a platform for innovative projects that address local needs. 
+       By cultivating collaborative opportunities and encouraging civic engagement, JCI Ottawa empowers its members 
+       to develop practical skills and make a lasting impact, seamlessly contributing to the shared mission of creating 
+       positive change within both the local community and the worldwide JCI network.
+ 
       </p>
     </div>
   </div>
@@ -73,7 +84,7 @@
 <section class="cta-yellow">
   <h3>Curious About JCI?</h3>
   <p>Make the first move towards positive change for yourself and the city that you love and call home. Be Better.</p>
-  <a href="#" class="btn-blue">Join JCI</a>
+  <a href="https://app.glueup.com/org/jciottawa" class="btn-blue">Join JCI</a>
 </section>
 
 <section class="cta-blue">

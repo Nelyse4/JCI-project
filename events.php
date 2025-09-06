@@ -30,10 +30,10 @@
     </div>
 
     <div class="tab-content" id="calendar">
-      <!-- Example: My Google Calendar  -->
-       <iframe src="https://calendar.google.com/calendar/embed?src=2c04e1cdd588f6bab90124760d055f7f9a62b325706097fa475ec477865a9e3a%40group.calendar.google.com&ctz=America%2FToronto" 
+      
+       <iframe src="https://calendar.google.com/calendar/embed?src=ottawa.jci%40gmail.com&ctz=America%2FToronto" 
         style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
-    </iframe>
+       </iframe>
     </div>
 
   </section>
