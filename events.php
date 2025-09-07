@@ -26,27 +26,44 @@
     </div>
 
     <div class="tab-content" id="past">
-      <p>No past events available.</p>
+      
     </div>
 
     <div class="tab-content" id="calendar">
-      
-       <iframe src="https://calendar.google.com/calendar/embed?src=ottawa.jci%40gmail.com&ctz=America%2FToronto" 
-        style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
-       </iframe>
+      <div id="calendar-frame-container"></div>
     </div>
-
   </section>
 
 </div>
+
+<!-- Tabs Script -->
 <script>
   document.querySelectorAll(".tab-link").forEach(function (tab) {
     tab.addEventListener("click", function () {
+      // Remove active classes from all tabs and content sections
       document.querySelectorAll(".tab-link").forEach(t => t.classList.remove("active"));
       document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
 
+      // Activate clicked tab and its content
       this.classList.add("active");
-      document.getElementById(this.getAttribute("data-tab")).classList.add("active");
+      const tabId = this.getAttribute("data-tab");
+      const tabContent = document.getElementById(tabId);
+      tabContent.classList.add("active");
+
+      //  load the calendar iframe when the calendar tab is clicked
+      if (tabId === "calendar") {
+        const container = document.getElementById("calendar-frame-container");
+        if (!container.querySelector("iframe")) {
+          const iframe = document.createElement("iframe");
+          iframe.src = "https://calendar.google.com/calendar/embed?src=ottawa.jci%40gmail.com&ctz=America%2FToronto";
+          iframe.style.border = "0";
+          iframe.style.width = "100%";
+          iframe.style.height = "600px";
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("scrolling", "no");
+          container.appendChild(iframe);
+        }
+      }
     });
   });
 </script>

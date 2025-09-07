@@ -39,7 +39,17 @@
         </div>
       </div>
     </div>
-
+    <!-- Immediate Past President -->
+    <div class="team-card">
+      <img src="images/Harleen Kaur-IPP.jpg" alt="Harleen Kaur">
+      <div class="info">
+        <h3>Harleen Kaur</h3>
+        <p><strong>Title:</strong> Immediate Past President</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/harleenkaur21/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
     <!-- Secretary -->
     <div class="team-card">
       <img src="images/Anyi Ding -Secretary.jpeg" alt="Anyi Ding">
@@ -124,17 +134,7 @@
       </div>
     </div>
 
-    <!-- Immediate Past President -->
-    <div class="team-card">
-      <img src="images/Harleen Kaur-IPP.jpg" alt="Harleen Kaur">
-      <div class="info">
-        <h3>Harleen Kaur</h3>
-        <p><strong>Title:</strong> Immediate Past President</p>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/harleenkaur21/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
+  
 
   </div>
 </section>

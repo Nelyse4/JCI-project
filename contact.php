@@ -34,10 +34,10 @@
 
   <div class="newsletter-section">
     <h3>Get on our newsletter</h3>
-    <form class="newsletter-form" action="#" method="POST">
+    <!-- <form class="newsletter-form" action="#" method="POST">
       <input type="email" placeholder="Enter e-mail address" required>
       <button type="submit">Subscribe</button>
-    </form>
+    </form> -->
   </div>
 </section>
 

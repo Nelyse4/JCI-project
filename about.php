@@ -100,10 +100,10 @@
 
 <section class="newsletter">
   <h3>Get on our <br> Newsletter</h3>
-  <form class="newsletter-form">
+  <!-- <form class="newsletter-form">
     <input type="email" placeholder="Enter e-mail address" required>
     <button type="submit">Subscribe</button>
-  </form>
+  </form> -->
 </section>
 
 </main>
