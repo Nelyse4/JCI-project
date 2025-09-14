@@ -1195,31 +1195,7 @@ body {
     cursor: pointer;
   }
 }
-
-/* SCROLLED state (after page is scrolled) */
-.jci-header.scrolled {
-  background: #fff;
-  color: var(--accent-blue-1);
-  box-shadow: 0 6px 18px rgba(18, 35, 63, 0.12);
-  padding: 0.6rem 0;
-}
-
-/* When header is scrolled: links and buttons change */
-.jci-header.scrolled a { color: var(--accent-blue-2); }
-.jci-header.scrolled .jci-buttons .btn {
-  background: var(--accent-yellow);
-  color: var(--accent-blue-1);
-  border: 1px solid rgba(0,0,0,0.04);
-}
-
-/* tweak nav link color when scrolled */
-.jci-header .jci-nav a { color: rgba(255,255,255,0.95); }
-.jci-header.scrolled .jci-nav a { color: var(--accent-blue-2); }
-
-/* ensure header logo scales a little when scrolled */
-.jci-header .logo { height: 72px; transition: height 300ms ease; }
-.jci-header.scrolled .logo { height: 56px; }
-
+/* 
 
 
 /* Waves */
