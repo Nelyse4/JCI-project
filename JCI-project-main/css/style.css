@@ -1195,6 +1195,7 @@ body {
     cursor: pointer;
   }
 }
+/* 
 
 
 /* Waves */
@@ -1256,47 +1257,4 @@ body {
   .waves { height: 110px; }
   .jci-header .logo { height: 56px; }
   .jci-header.scrolled .logo { height: 44px; }
-}
-
-/* Header scroll */
-/* buttons change to blue */
-.jci-header.scrolled {
-  background: #fff;
-  color: var(--accent-blue-1);
-  box-shadow: 0 6px 18px rgba(18, 35, 63, 0.12);
-  padding: 0.6rem 0;
-}
-
-/* When header is scrolled: links and buttons change */
-.jci-header.scrolled a { 
-  color: #0077b5; 
-}
-
-.jci-header.scrolled .jci-buttons .btn {
-  background: #1e3c72;  /* ✅ blue background */
-  color: #fff;                       /* ✅ white text */
-  border: 1px solid var(--accent-blue-1);
-  transition: all 0.3s ease;
-}
-
-.jci-header.scrolled .jci-buttons .btn:hover {
-  background: #0077b5;
-  border-color: #0077b5;
-}
-
-/* tweak nav link color when scrolled */
-.jci-header .jci-nav a { 
-  color: rgba(255,255,255,0.95); 
-}
-.jci-header.scrolled .jci-nav a { 
-  color: #0077b5; 
-}
-
-/* ensure header logo scales a little when scrolled */
-.jci-header .logo { 
-  height: 72px; 
-  transition: height 300ms ease; 
-}
-.jci-header.scrolled .logo { 
-  height: 56px; 
 }
