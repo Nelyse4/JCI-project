@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 /* Layout setup for sticky footer */
 html,
 body {
@@ -12,6 +13,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,7 +31,7 @@ main {
 /* Header Styles */
 .jci-header {
   background: linear-gradient(to bottom, #1e3c72, #2a5298);
-  padding: 1.2em 2em;
+  padding: 0.8em 1.5em;
   position: fixed;
   top: 0;
   bottom: 1;
@@ -57,7 +59,7 @@ section {
 }
 
 .logo {
-  height: 80px;
+  height: 75px;
 }
 
 .jci-buttons {
@@ -82,8 +84,8 @@ section {
 .jci-nav {
   display: flex;
   justify-content: center;
-  gap: 2em;
-  margin-top: 1.5rem;
+  gap: 5em;
+  margin-top: -0.5rem;
   flex-wrap: wrap;
 }
 
@@ -240,24 +242,29 @@ section {
 /* About page */
 
 .hero {
-  padding: 3rem 2rem;
-  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(to right, #f9f9f9, #f1f4fb);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 1200px;
-  background: #fff;
-  margin: auto;
-  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  color: #000;
 }
 .about-content h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   line-height: 1.3;
+  margin-top: 80px;
   margin-bottom: 2rem;
   text-align: left;
+  color:#000;
+  
 }
 
 .about-content h1 span {
   color: #000;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
 }
 
 .hero-wrapper {
@@ -321,6 +328,7 @@ section {
   margin: 0 auto;
   padding: 40px 20px;
   font-family: "Arial", sans-serif;
+  color: #000;
 }
 
 .what-jci h2 {
@@ -365,6 +373,7 @@ section {
   padding: 0 20px;
   margin: 40px auto;
   max-width: 1200px;
+  color: #000;
 }
 
 .programs h2 {
@@ -691,6 +700,7 @@ section {
   margin-bottom: 2rem;
   padding: 0;
   border-bottom: 2px solid #ccc;
+  color: #000;
 }
 
 .tab-link {
@@ -784,12 +794,16 @@ body {
   padding: 2rem;
   max-width: 1300px;
   margin: auto;
+  margin-top: 90px;
+  color: #000;
+  
 }
 
 .team-section h2 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
   text-align: center;
+  
 }
 
 .team-section p {
@@ -910,130 +924,188 @@ body {
 }
 
 
-/* contact page*/
-
-.contact-page {
-  font-family: Arial, sans-serif;
-  padding: 2rem;
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color:lightblue;
+  margin: 0;
+  padding: 0;
 }
 
-.contact-header {
+/* Hero section */
+.contact-hero {
+  background: url("../images/jcio.png") center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-hero .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 3rem 2rem;
+  width: 100%;
   text-align: center;
-  max-width: 800px;
-  margin: auto;
-  padding-bottom: 2rem;
 }
 
 .contact-header h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact-header p {
-  color: #555;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ddd;
 }
 
+/* Contact Form */
 .contact-container {
-  background: url("/images/group.png") no-repeat center;
-  background-size: cover;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f5f5f5;
 }
 
 .contact-form {
   background: white;
-  padding: 2rem;
+  padding: 3rem 2rem;
   max-width: 500px;
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .contact-form h3 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #1f4ea8;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 0.85rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 .contact-form button {
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.9rem;
   background-color: #fbc02d;
   border: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.contact-form button:hover {
+  background-color: #d4a107;
+}
+
+/* Contact Info */
 .contact-info {
-  background: #f0f6ff;
+  background: #2a5298;
   padding: 3rem 2rem;
   text-align: center;
+  color: #000;
 }
 
 .contact-info h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
 }
 
 .info-grid {
   display: flex;
   justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 1.5rem;
 }
 
 .info-box {
   background: white;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   width: 250px;
 }
 
+/* Newsletter */
 .newsletter-section {
-  background: #2a5298;
+  background: #fbc02d;
   color: white;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .newsletter-section h3 {
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* .newsletter-form {
-  /* display: flex; */
-/* justify-content: center; */
-/* flex-wrap: wrap; */
-/* gap: 1rem; */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
 .newsletter-form input {
-  padding: 0.75rem;
-  /* width: 250px; */
+  padding: 1rem;
   border: none;
-  border-radius: 0px;
+  border-radius: 4px;
+  width: 250px;
 }
 
 .newsletter-form button {
-  /* padding: 0.75rem 1rem; */
   background-color: #fbc02d;
   border: none;
+  padding: 1rem 1.5rem;
   font-weight: bold;
-  border-radius: 0px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.newsletter-form button:hover {
+  background-color: #d49e00;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*HOME*/
 .banner {
   background-image: url("../images/no.png");
   /* background: linear-gradient(to right, #2a5298, #1e3c72 ); */
@@ -1043,6 +1115,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 12rem;
 }
 
 .intro {
@@ -1073,7 +1146,7 @@ body {
 
 .carousel {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1091,18 +1164,21 @@ body {
   position: absolute;
   inset: 0;
   opacity: 0;
+  transition: opacity 1s ease-in-out; 
+  z-index: 0;
 }
 
 .img > img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
 .img.active {
   opacity: 1;
+  z-index: 1;
 }
 
 .carousel-btn {
@@ -1257,4 +1333,27 @@ body {
   .waves { height: 110px; }
   .jci-header .logo { height: 56px; }
   .jci-header.scrolled .logo { height: 44px; }
+}
+
+/* Initial header state */
+.jci-header.default {
+  background-color: #2a5298; /* blue */
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.jci-header.scrolled-down {
+  background: white !important;
+  color: black !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.jci-header.scrolled-down a {
+  color: black !important;
 }

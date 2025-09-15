@@ -1,15 +1,5 @@
 <!-- includes/header.php -->
-  <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-<header class="jci-header" id="site-header">
+<header class="jci-header default" id="site-header">
   <div class="jci-header-top">
     <img src="images/JCI Logo.png" alt="JCI Ottawa Logo" class="logo">
     <div class="jci-buttons">
@@ -19,29 +9,26 @@
   </div>
   <nav class="jci-nav">
     <ul class="main-nav">
-    <li><a href="index.php">Home</a></li>
-    <li class="dropdown">
-      <a href="#">About Us</a>
-      <ul class="submenu">
-        <li><a href="about.php">About JCI</a></li>
-        <li><a href="team.php">Our Team</a></li>
-        
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#">Activities</a>
-      <ul class="submenu">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Workshops</a></li>
-        <li><a href="events.php">Events</a></li>
-        <li><a href="#">Conferences</a></li>
-      </ul>
-    </li>
+      <li><a href="index.php">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About Us</a>
+        <ul class="submenu">
+          <li><a href="about.php">About JCI Ottawa</a></li>
+          <li><a href="team.php">Our Team</a></li>
+          <li><a href="https://www.jcicanada.com/" target="_blank" rel="noopener">JCI Canada</a></li>
     
-    <li><a href="contact.php">Contact</a></li>
-    <!-- <a href="#"><span class="search-icon">&#128269;</span></a> -->
-     </ul>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Activities</a>
+        <ul class="submenu">
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="events.php">Events</a></li>
+          <li><a href="#">Conferences</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.php">Contact</a></li>
+    </ul>
   </nav>
 </header>
-</body>
-</html>

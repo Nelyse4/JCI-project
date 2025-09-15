@@ -702,7 +702,7 @@ section {
 
 /* Tab Content */
 .tab-content {
-  display: flex;
+  display: none;
   justify-content: center;
   
 }

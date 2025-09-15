@@ -1,44 +1,69 @@
-<?php include 'includes/header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | JCI Ottawa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- CONTACT PAGE -->
-<section class="contact-page">
-  <div class="contact-header">
-    <h2>Contact Us</h2>
-    <p>Get in contact with us about becoming a member & discover the power of Junior Chamber International. We'd love to meet you in person!</p>
-  </div>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <div class="contact-container">
-    <form class="contact-form" action="https://formsubmit.co/executive@jciottawa.ca" method="POST">
-      <h3>Get In Touch</h3>
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="tel" name="phone" placeholder="Phone Number">
-      <textarea name="message" placeholder="Message" rows="5" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+</head>
 
-  <div class="contact-info">
-    <h3>We’re here for you.</h3>
-    <div class="info-grid">
-      <div class="info-box">
-        <h4>Office</h4>
-        <p>JCI Ottawa, Ottawa, Ontario.</p>
+<body>
+
+  <?php include 'includes/header.php'; ?>
+
+  <main>
+    <!-- CONTACT PAGE -->
+    <section class="contact-hero">
+      <div class="overlay">
+        <div class="contact-header">
+          <h2>Contact Us</h2>
+          <p>Get in touch with us about becoming a member. We'd love to meet you in person!</p>
+        </div>
       </div>
-      <div class="info-box">
-        <h4>Email</h4>
-        <p>ottawa.jci@gmail.com</p>
+    </section>
+
+    <section class="contact-container">
+      <form class="contact-form" action="https://formsubmit.co/executive@jciottawa.ca" method="POST" data-aos="fade-up">
+        <h3>Get In Touch</h3>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="contact-info">
+      <h3>We’re here for you.</h3>
+      <div class="info-grid">
+        <div class="info-box">
+          <h4>JCI Ottawa</h4>
+          <p>Ottawa, Ontario</p>
+        </div>
+        <div class="info-box">
+          <h4>Email</h4>
+          <p>ottawa.jci@gmail.com</p>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="newsletter-section">
-    <h3>Get on our newsletter</h3>
-    <!-- <form class="newsletter-form" action="#" method="POST">
-      <input type="email" placeholder="Enter e-mail address" required>
-      <button type="submit">Subscribe</button>
-    </form> -->
-  </div>
-</section>
+    <section class="newsletter-section">
+      <h3>Join Our Community</h3>
+      <form class="newsletter-form">
+        <a href="https://app.glueup.com/org/jciottawa" class="btn-blue">Join JCI Ottawa</a>
+      </form>
+    </section>
+  </main>
 
-<?php include 'includes/footer.php'; ?>
+  <?php include 'includes/footer.php'; ?>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+
+</body>
+</html>

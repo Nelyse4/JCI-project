@@ -13,9 +13,7 @@
   <div class="footer-top">
     <img src="images/JCI Logo.png" alt="JCI Ottawa Logo" class="logo">
 
-    <nav class="footer-nav">
-      <a href="https://www.jcicanada.com/" target="_blank" rel="noopener">JCI Canada</a>
-    </nav>
+    
 
 <div class="social-icons">
   <a href="https://www.facebook.com/JCI.Ottawa/" target="_blank" rel="noopener noreferrer" title="Facebook">
@@ -35,8 +33,28 @@
   <hr class="footer-divider" />
 
   <div class="footer-bottom">
-    &copy; Copyright 2024, All Rights Reserved by JCI
+    &copy; Copyright 2025, All Rights Reserved by JCI Ottawa
   </div>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const header = document.getElementById('site-header');
+
+  function checkScroll() {
+    if (window.scrollY > 60) {
+      header.classList.add('scrolled-down');
+      header.classList.remove('default');
+    } else {
+      header.classList.remove('scrolled-down');
+      header.classList.add('default');
+    }
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  checkScroll(); // Initial check on page load
+});
+
+</script>
+
 </body>
 </html>
