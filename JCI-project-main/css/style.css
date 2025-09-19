@@ -323,82 +323,141 @@ section {
   color: #333;
 }
 
-.what-jci {
+/* Shared container for alignment */
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
-  font-family: "Arial", sans-serif;
-  color: #000;
 }
 
-.what-jci h2 {
-  font-weight: bold;
-  font-size: 1.5rem;
+/* WHAT JCI OFFERS */
+.what-jci h2,
+.programs h2 {
+  font-size: 2rem;
   text-align: center;
+  font-weight: 700;
   margin-bottom: 30px;
-  letter-spacing: 1px;
+  color: #2a5298;
 }
 
 .what-jci p {
-  max-width: 700px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
   margin: 0 auto 40px auto;
-  padding-left: 10px;
-  font-size: 1rem;
-  color: #222;
-  line-height: 1.5;
-  text-align: left;
+  color: #333;
+  text-align: center;
 }
 
 .jci-columns {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: left;
 }
 
 .jci-box {
   flex: 1;
-  font-size: 0.9 rem;
-  line-height: 1.5;
-  text-align: left;
+  min-width: 250px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.jci-box:hover {
+  transform: translateY(-5px);
 }
 
 .jci-box h4 {
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 600;
   margin-bottom: 10px;
-  text-align: left;
-  padding-left: 10px;
+  color: #1f4ea8;
 }
 
+.jci-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* PROGRAMS SECTION */
 .programs {
-  padding: 0 20px;
-  margin: 40px auto;
-  max-width: 1200px;
-  color: #000;
+  background-color: #f9f9f9;
+  padding: 40px 0;
 }
-
 .programs h2 {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 2rem;
   text-align: center;
-  padding-left: 200px;
+  font-weight: 700;
+  margin-bottom: 30px; 
+  color: #2a5298;
+  justify-content: space-between;
+  margin-top: 0;
 }
 .programs-content {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 40px;
   align-items: center;
+  margin-top: 0;
 }
 
 .programs-content img {
-  width: 50%;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
   object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .programs-text {
   flex: 1;
-  font-size: 1rem;
-  line-height: 1.5;
+  min-width: 280px;
+}
+
+.programs-text p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-yellow {
+  background-color: #f7b733;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #e0a024;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .jci-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .programs-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .programs-content img {
+    width: 100%;
+  }
+
+  .programs-text {
+    text-align: center;
+  }
 }
 
 .btn-yellow {
@@ -452,10 +511,9 @@ section {
 .cta-blue {
   width: 100%;
   display: flex;
-  /* max-width: 1200px; */
   margin: 40px auto;
   padding: 40px 20px;
-  background-color: #1e3a8a; /* navy-ish blue */
+  background-color: #2a5298; /* navy-ish blue */
   color: white;
   border-radius: 8px;
   align-items: center;
@@ -479,9 +537,11 @@ section {
   margin-bottom: 1rem;
 }
 .cta-blue .cta-right img {
-  max-width: 300px;
+  max-width: 100%;
+  width: 400px;
   height: auto;
   border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .cta-right {
@@ -500,57 +560,6 @@ section {
   display: inline-block;
 }
 
-.newsletter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  /* background: #102b5b; */
-  color: white;
-  padding: 8rem 2rem;
-  text-align: center;
-  background-image: url("../images/groupphoto.png");
-  background-color: rgba(89, 89, 90, 0.9);
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center;
-}
-
-.newsletter h3 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
-
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* gap: 1rem; */
-  flex-wrap: wrap;
-}
-
-.newsletter-form input {
-  padding: 0.85rem;
-  border: none;
-  border-radius: 0px;
-  width: 240px;
-  height: 3.5rem;
-  font-size: 1rem;
-}
-
-.newsletter-form button {
-  background-color: #fbc02d;
-  border: none;
-  padding: 1.2rem 1.5rem;
-  border-radius: 0px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-.newsletter-form button:hover {
-  background-color: #3f3fcc;
-}
 /* Responsive */
 @media (max-width: 768px) {
   .hero-images {
@@ -570,91 +579,6 @@ section {
   .cta-blue .cta-right img {
     margin-top: 1.5rem;
   }
-}
-
-/* ABOUT JCI PAGE */
-
-.about-jci-page .page-title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
-/* Hero Image Section with Overlays */
-.jci-hero-section {
-  position: relative;
-  margin-bottom: 3rem;
-}
-
-.jci-hero-section .background-img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  display: block;
-}
-
-.overlay-text {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 1rem;
-  border-radius: 5px;
-  max-width: 300px;
-  font-size: 0.95rem;
-}
-
-.overlay-text h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.overlay-text p {
-  line-height: 1.5;
-  font-family: "Georgia", serif;
-}
-
-/* Positioning overlays */
-.mission {
-  top: 10%;
-  left: 10%;
-}
-
-.creed {
-  top: 20%;
-  right: 10%;
-  max-width: 400px;
-}
-
-.vision {
-  bottom: 15%;
-  left: 10%;
-}
-
-/* Plan of Action Section */
-.plan-of-action-section {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.plan-of-action-section .plan-title h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.plan-of-action-section .plan-title p {
-  font-size: 1.2rem;
-  color: #333;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.slides-embed iframe {
-  max-width: 1000px;
-  width: 100%;
-  height: 569px;
-  border: none;
-  margin: 0 auto;
-  display: block;
 }
 
 /* Events Page */
@@ -862,9 +786,10 @@ body {
 }
 
 .team-card .info p {
-  margin: 0;
+  margin: 0 0 0.5rem;
   font-size: 0.95rem;
-  line-height: 1.4;
+  font-weight: 600;
+  align-items: center;
 }
 
 /* SOCIAL ICONS */
@@ -924,14 +849,6 @@ body {
 }
 
 
-/* General */
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #fff;
-  color:lightblue;
-  margin: 0;
-  padding: 0;
-}
 
 /* Hero section */
 .contact-hero {
@@ -1107,15 +1024,17 @@ body {
 
 /*HOME*/
 .banner {
-  background-image: url("../images/no.png");
-  /* background: linear-gradient(to right, #2a5298, #1e3c72 ); */
+  /* background-image: url("../images/no.png"); */
+  background: linear-gradient(to right, #2a5298, #1e3c72 ); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 12rem;
+  padding-top: 8rem;
+  position: relative;
+  height: 90vh;
 }
 
 .intro {
@@ -1146,12 +1065,12 @@ body {
 
 .carousel {
   width: 100%;
-  height: 70vh;
+  height: 100%;
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-inline: 3rem;
+  justify-content: center;
+  padding-inline: 2rem;
 }
 
 .carousel > ul {
@@ -1166,33 +1085,43 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in-out; 
   z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img > img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  max-height: 85vh;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
-  object-position: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 .img.active {
   opacity: 1;
   z-index: 1;
 }
+.carousel-btn,
+.progress-bar {
+  display: none !important;
+}
 
 .carousel-btn {
   position: absolute;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255 255 255 / 0.7);
   border: none;
-  color: white;
-  transform: translateY(-50);
-  top: 50%;
-  cursor: pointer;
-  border-radius: 10rem;
+  color: #2a5298;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
 }
 
 .carousel-btn:hover,
@@ -1211,12 +1140,12 @@ body {
 
 .progress-bar {
   position: absolute;
-  list-style: none;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  bottom: 10px;
+  gap: 0.75rem;
+  z-index: 10;
 }
 
 .progress-bar > li {
@@ -1233,9 +1162,31 @@ body {
 .progress-bar li.selected {
   background: white;
 }
-
-.newsletter-title > h3 {
-  font-size: 2.5rem;
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #102b5b; 
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+  background-image: url("../images/groupphoto.png");
+  background-color: rgba(89, 89, 90, 0.9);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  
+} 
+.newsletter .newsletter-title {
+  max-width: 90%;
+  margin: 4rem auto;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Responsive */
@@ -1253,25 +1204,19 @@ body {
     width: 30rem;
     font-size: 0.9rem;
   }
-
-  .newsletter-form input {
-    /* padding: 0.75rem; */
-    /* width: 250px; */
-    border: none;
-    border-radius: 0px;
-    font-size: 1rem;
+}
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
   }
-
-  .newsletter-form button {
-    /* padding: 0.75rem 1rem; */
-    background-color: #fbc02d;
-    border: none;
-    font-weight: bold;
-    border-radius: 0px;
-    cursor: pointer;
+  50% {
+    transform: translateY(-10px);
   }
 }
-/* 
+
+.newsletter .newsletter-title {
+  animation: floatUpDown 10s ease-in-out infinite;
+}
 
 
 /* Waves */

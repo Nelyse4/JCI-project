@@ -14,32 +14,38 @@
   <?php include('includes/header.php'); ?>
 
 <main>
-  <section class="banner">
-    <div class="container">
-      <div class="carousel" data-carousel>
-        <button class="carousel-btn prev" data-carousel-btn="prev"><i class="material-icons">keyboard_arrow_left</i></button>
-        <button class="carousel-btn next" data-carousel-btn="next"><i class="material-icons">keyboard_arrow_right</i></button>
+  <section class="banner" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <div class="carousel" data-carousel>
+      <button class="carousel-btn prev" data-carousel-btn="prev" aria-label="Previous slide">
+        <i class="material-icons">keyboard_arrow_left</i>
+      </button>
+      <button class="carousel-btn next" data-carousel-btn="next" aria-label="Next slide">
+        <i class="material-icons">keyboard_arrow_right</i>
+      </button>
 
-        <ul class="images" data-images>
-          <li class="img active" data-active><img src="./images/JCi.png" alt="JCI image"></li>
-          <li class="img"><img src="./images/jcio.png" alt="JCI image"></li>
-          <li class="img"><img src="./images/group.png" alt="JCI image"></li>
-          <li class="img"><img src="./images/parliament.jpg" alt="JCI image"></li>
-          <li class="img"><img src="./images/jcit.png" alt="JCI image"></li>
-          <li class="img"><img src="./images/ott.png" alt="JCI image"></li>
-          <li class="img"><img src="./images/vol.png" alt="JCI image"></li>
-        </ul>
+      <ul class="images" data-images>
+        <li class="img active" data-active><img src="./images/JCi.png" alt="JCI image"></li>
+        <li class="img"><img src="./images/jcio.png" alt="JCI image"></li>
+        <li class="img"><img src="./images/group.png" alt="JCI image"></li>
+        <li class="img"><img src="./images/parliament.jpg" alt="JCI image"></li>
+        <li class="img"><img src="./images/jcit.png" alt="JCI image"></li>
+        <li class="img"><img src="./images/ott.png" alt="JCI image"></li>
+        <li class="img"><img src="./images/vol.png" alt="JCI image"></li>
+      </ul>
 
-        <ul class="progress-bar">
-          <li class="selected"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+      <ul class="progress-bar">
+        <li class="selected"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- WAVES -->
   <section>
@@ -65,33 +71,61 @@
       </div>
     </div>
   </section>
-
   <section class="cta-blue">
-    <div class="cta-left">
-      
-      <h4>Have a question?</h4>
-      <p>Our team is happy to assist you</p>
-      <a href="contact.php" class="btn-white">Contact Us</a>
-      
-    </div>
-    <div class="cta-right">
-      <img src="images/JCi.png" alt="Support team">
-    </div>
-  </section>
-  <section class="newsletter">
-    <div class="newsletter-title">
-  </section>  
-  <div class="intro-card" data-aos="fade-up" data-aos-duration="1000">
-  <p>JCI Ottawa</p>
+  <div class="cta-left" data-aos="fade-right" data-aos-duration="2000">
+    <h4>Have a question?</h4>
+    <p>Our team is happy to assist you</p>
+    <a href="contact.php" class="btn-white">Contact Us</a>
   </div>
+
+  <div class="cta-right" data-aos="fade-left" data-aos-duration="2000">
+    <div class="cta-image-slider">
+      <img id="ctaImage" src="./images/jcit.png" alt="Support team">
+    </div>
+  </div>
+</section>
+
+
+  <section class="newsletter">
+  <div class="newsletter-title" data-aos="fade-right" data-aos-duration="10000" data-aos-once="false">
+    <p>JCI Ottawa empowers its members to develop practical skills and make a lasting impact,</p>
+      <p>seamlessly contributing to the shared mission of creating positive change within both </p>
+      <p>the local community and the worldwide JCI network.</p>
+  </div>
+</section>
+
   
 </main>
 
 <?php include('includes/footer.php'); ?>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-<!-- Carousel Script+ AOS Init -->
+<!-- Carousel Script+ cta-image-slider+ AOS Init -->
 <script>
+  /*cta-image-slider */
+    document.addEventListener("DOMContentLoaded", () => {
+    const images = [
+      './images/jcit.png',
+      './images/group.png',
+      './images/parliament.jpg',
+      './images/ott.png',
+      './images/vol.png'
+    ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById('ctaImage');
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      imgElement.style.opacity = 0;
+
+      setTimeout(() => {
+        imgElement.src = images[currentIndex];
+        imgElement.style.opacity = 1;
+      }, 300); // fade out and back in
+    }, 2000); // 2 seconds per image
+  });
+    /**carousel */
     document.addEventListener("DOMContentLoaded", () => {
       const images = document.querySelectorAll(".images li");
       const dots = document.querySelectorAll(".progress-bar li");
